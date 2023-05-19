@@ -73,5 +73,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+(setq initial-frame-alist '((top . 50) (left . 250) (width . 300) (height . 70)))
 
 (load! "ace-window.el")
+(load! "dev-keys.el")
