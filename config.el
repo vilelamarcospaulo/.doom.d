@@ -75,5 +75,5 @@
 
 (setq initial-frame-alist '((top . 50) (left . 250) (width . 300) (height . 70)))
 
-(load! "ace-window.el")
+(load! "window-manager.el")
 (load! "dev-keys.el")
