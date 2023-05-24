@@ -5,11 +5,20 @@
                                          (frame-first-window))))
       (select-window goto-window)))
 
-(map! "s-]" #'next-window)
-(map! "s-[" #'previous-window)
+(defun hsplit-last-buffer ()
+  (interactive)
+  (split-window-horizontally)
+  (other-window 1 nil)
+  (switch-to-next-buffer))
 
-(map! "s-|" #'split-window-vertically)
-(map! "s-\\" #'split-window-horizontally)
+(defun vsplit-last-buffer ()
+  (interactive)
+  (split-window-vertically)
+  (other-window 1 nil)
+  (switch-to-next-buffer))
+
+(map! "s-|" #'vsplit-last-buffer)
+(map! "s-\\" #'hsplit-last-buffer)
 
 (map! :map general-override-mode-map
       :n "s-1" (lambda () (interactive) (wm-focus-window 1))

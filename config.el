@@ -76,4 +76,4 @@
 (setq initial-frame-alist '((top . 50) (left . 250) (width . 300) (height . 70)))
 
 (load! "window-manager.el")
-(load! "dev-keys.el")
+(load! "code-navigation.el")
