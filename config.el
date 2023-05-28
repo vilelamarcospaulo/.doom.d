@@ -77,3 +77,4 @@
 
 (load! "window-manager.el")
 (load! "code-navigation.el")
+(load! "git.el")

@@ -21,9 +21,9 @@
 (map! "s-\\" #'hsplit-last-buffer)
 
 (map! :map general-override-mode-map
-      :n "s-1" (lambda () (interactive) (wm-focus-window 1))
-      :n "s-2" (lambda () (interactive) (wm-focus-window 2))
-      :n "s-3" (lambda () (interactive) (wm-focus-window 3))
-      :n "s-4" (lambda () (interactive) (wm-focus-window 4))
-      :n "s-5" (lambda () (interactive) (wm-focus-window 5))
-      :n "s-6" (lambda () (interactive) (wm-focus-window 6)))
+      :nvi "s-1" (lambda () (interactive) (wm-focus-window 1))
+      :nvi "s-2" (lambda () (interactive) (wm-focus-window 2))
+      :nvi "s-3" (lambda () (interactive) (wm-focus-window 3))
+      :nvi "s-4" (lambda () (interactive) (wm-focus-window 4))
+      :nvi "s-5" (lambda () (interactive) (wm-focus-window 5))
+      :nvi "s-6" (lambda () (interactive) (wm-focus-window 6)))
